@@ -1,0 +1,50 @@
+#### Ferramentas de Requisitos ###
+
+# apache
+# sudo get-apt install apache 2 -y
+
+## CURL 
+# sudo apt-get install curl
+
+## SSMTP
+# sudo apt-get install ssmtp -y
+    # crontab -e  Acessa o arquivo do crontab para confiuracao
+    # Configurar o SSMTP /etc/ssmtp/ssmtp.conf
+    # Configuracao do SSMTP
+
+    # root=email@gmail.com
+    # mailhub=smtp.gmail.com:587
+    # AuthUser=email@gmail.com
+    # AuthPass=senha de app do GMAIL
+    # UseSTARTTLS=yes
+
+##  MAILUTILS  
+# sudo apt-get install mailutils -y
+
+## Banco mysq
+# sudo apt-get install mysql-server -y
+    # Acessar o mysql
+    # sudo mysql -u root
+
+    #criar o banco de dados
+    # create database mutillidae;
+
+    #usar o banco
+    #use mutillidae;
+
+    #Criar tabelas Produtps e usuario
+    #create table produtos(livro VARCHAR(255), autor VARCHAR(255), preco_ebook VARCHAR(255), preco_livro VARCHAR(255));
+    #create table usuarios(nome VARCHAR(255), email VARCHAR(255), telefone VARCHAR(255), cidade VARCHAR(255));
+
+    #Popular o banco com dados
+    #sudo mysql -u root mutillidae < ~/Scripts/DadosMultilidae-main/mutillidae.sql
+
+
+# PYTHON
+#sudo apt install python-pip -y
+
+#AWSCLI
+#pip install awscli
+#sudo apt install awscli -y
+    # aws configure
+    # aws s3 ls
